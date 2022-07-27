@@ -9,8 +9,10 @@ $text = $_POST['text'];
 if ($text == '') {
     // This is the first request. Note how we start the response with CON
     $response = "CON Welcome  to Dollarsoft \n";
-    $response .= "1. Our Services \n";
-    $response .= '2. Products';
+    $response .= "1. Login \n";
+    $response .= "2. Join Us \n";
+    $response .= "3. Our Services \n";
+    $response .= '4. Products';
 } elseif ($text == '1') {
     // Business logic for first level response
     $response = "CON Choose account information you want to view \n";
@@ -25,6 +27,13 @@ if ($text == '') {
 
     // This is a terminal request. Note how we start the response with END
     $response = 'END Your account number is '.$accountNumber;
+} elseif ($text == '1*0556676471') {
+    // This is a second level response where the user selected 1 in the first instance
+    $accountNumber = 'GHS2500';
+
+    // This is a terminal request. Note how we start the response with END
+    $response = "Welcom Dollarstir \n";
+    $response .= 'END Your account Balance is '.$accountNumber;
 }
 
 // Echo the response back to the API
