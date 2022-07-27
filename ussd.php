@@ -27,7 +27,7 @@ if ($text == '') {
 
     // This is a terminal request. Note how we start the response with END
     $response = 'END Your account number is '.$accountNumber;
-} elseif ($text == '0556676471') {
+} elseif ($text == '1 *'.$text) {
     // This is a second level response where the user selected 1 in the first instance
     $accountNumber = 'GHS2500';
 
