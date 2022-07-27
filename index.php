@@ -1,22 +1,17 @@
 <?php
 
-    include_once 'menu.php';
-
-    $isUserRegistered = false;
-
-    // Read the data sent via POST from our AT API
+include_once 'menu.php';
+    //set isUserRegistered flag to true
+    $isUserRegistered = true;
+    //Read the data sent via POST from our AT API
     $sessionId = $_POST['sessionId'];
     $serviceCode = $_POST['serviceCode'];
     $phoneNumber = $_POST['phoneNumber'];
     $text = $_POST['text'];
-
     $menu = new Menu();
-    $text = $menu->middleware($text);
-    //$text = $menu->goBack($text);
-
     if ($text == '' && $isUserRegistered == true) {
         //user is registered and string is is empty
-        echo 'CON '.$menu->mainMenuRegistered("<>Put a person's name here");
+        echo 'CON '.$menu->mainMenuRegistered('<Add a name here>');
     } elseif ($text == '' && $isUserRegistered == false) {
         //user is unregistered and string is is empty
         $menu->mainMenuUnRegistered();
