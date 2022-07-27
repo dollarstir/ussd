@@ -32,8 +32,8 @@ if ($text == '') {
     $accountNumber = 'GHS2500';
 
     // This is a terminal request. Note how we start the response with END
-    $response = "END Welcom Dollarstir \n";
-    // $response .= 'END Your account Balance is '.$accountNumber;
+    // $response = "END Welcom Dollarstir \n";
+    $response = 'END Your account Balance is '.$accountNumber;
 }
 
 // Echo the response back to the API
