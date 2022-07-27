@@ -5,13 +5,13 @@
 
         public static $GO_TO_MAIN_MENU = '99';
 
-        public static $API_KEY = '<>Your API KEY here'; //sandbox
+        public static $API_KEY = '57a4353e5d0fc7a9380bad4562a367448b38ccb7bc43858e320a19ff9dd854dd'; //sandbox
 
         public static $API_USERNAME = 'sandbox'; //sandbox
 
-        public static $COMPANY_NAME = '<SENDER ID here>';
+        public static $COMPANY_NAME = 'Dollarsoft';
 
-        public static $COUNTRY_CODE = 'YOu country code here e.g. +254';
+        public static $COUNTRY_CODE = '+233';
     }
 ?>
 
