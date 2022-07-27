@@ -16,7 +16,7 @@ if ($text == '') {
 } elseif ($text == '1') {
     // Business logic for first level response
     $response = "CON Choose account information you want to view \n";
-    $response .= "1. Account number \n";
+    $response .= " Account number \n";
 } elseif ($text == '2') {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
