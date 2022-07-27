@@ -18,7 +18,7 @@ if ($text == '') {
     $accountNumber = 'ACC1001';
 
     // This is a terminal request. Note how we start the response with END
-    $response = "END Welcome  Dollarsoft \n Your phone number is  GHS2500";
+    $response = "END Welcome  Dollarsoft \n Your phone number is '.$text.' and balance GHS2500";
 } elseif ($text == '2') {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
