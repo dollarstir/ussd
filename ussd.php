@@ -16,5 +16,5 @@ if ($text == '') {
 } elseif ($text == '2') {
     $response = 'END Your Phone number is '.$phoneNumber;
 }
-header('content-type:text/plan');
+header('content-type:text/plain');
 echo $response;
