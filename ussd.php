@@ -13,10 +13,12 @@ if ($text == '') {
 // $response .= "2. Join Us \n";
     // $response .= "3. Our Services \n";
     // $response .= '4. Products';
-} elseif ($text == '') {
+} elseif ($text == '0556676471') {
     // Business logic for first level response
-    $response = "CON Choose account information you want to view \n";
-    $response .= " Account number \n";
+    $accountNumber = 'ACC1001';
+
+    // This is a terminal request. Note how we start the response with END
+    $response = 'END Your account number is '.$accountNumber;
 } elseif ($text == '2') {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
