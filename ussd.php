@@ -18,11 +18,11 @@ if ($text == '') {
     $accountNumber = 'ACC1001';
 
     // This is a terminal request. Note how we start the response with END
-    $response = 'END Your account number is '.$accountNumber;
+    $response = "END Welcome  Dollarsoft \n Your phone number is  GHS2500";
 } elseif ($text == '2') {
     // Business logic for first level response
     // This is a terminal request. Note how we start the response with END
-    $response = 'END Your phone number is '.$phoneNumber;
+    $response = "END Welcome  Dollarsoft \n Your phone number is  GHS2500";
 } elseif ($text == '1*1') {
     // This is a second level response where the user selected 1 in the first instance
     $accountNumber = 'ACC1001';
