@@ -9,11 +9,11 @@ $text = $_POST['text'];
 if ($text == '') {
     // This is the first request. Note how we start the response with CON
     $response = "CON Welcome  to Dollarsoft \n";
-    $response .= "1. Login \n";
-    $response .= "2. Join Us \n";
-    $response .= "3. Our Services \n";
-    $response .= '4. Products';
-} elseif ($text == '1') {
+    $response .= "Enter Phone number  \n";
+// $response .= "2. Join Us \n";
+    // $response .= "3. Our Services \n";
+    // $response .= '4. Products';
+} elseif ($text == '') {
     // Business logic for first level response
     $response = "CON Choose account information you want to view \n";
     $response .= " Account number \n";
