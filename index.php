@@ -11,7 +11,7 @@ include_once 'menu.php';
     $menu = new Menu();
     if ($text == '' && $isUserRegistered == true) {
         //user is registered and string is is empty
-        echo 'CON '.$menu->mainMenuRegistered('<Add a name here>');
+        echo 'CON '.$menu->mainMenuRegistered('Dollarstir');
     } elseif ($text == '' && $isUserRegistered == false) {
         //user is unregistered and string is is empty
         $menu->mainMenuUnRegistered();
