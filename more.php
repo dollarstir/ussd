@@ -1,9 +1,9 @@
 <?php
 
-       $sessionId = $_GET['sessionId'];
-       $serviceCode = $_GET['serviceCode'];
-       $phoneNumber = $_GET['phoneNumber'];
-       $text = $_GET['text'];
+       $sessionId = $_POST['sessionId'];
+       $serviceCode = $_POST['serviceCode'];
+       $phoneNumber = $_GPOST['phoneNumber'];
+       $text = $_POST['text'];
         // use explode to split the string text response from Africa's talking gateway into an array.
         $ussd_string_exploded = explode('*', $text);
         // Get ussd menu level number from the gateway
